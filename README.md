@@ -4,7 +4,7 @@ A complete, multi-page website for **SHOAM (Student Helping Organization of Mala
 
 > **Education is for all.**
 
-This project is deliberately separate from the SYLI website. It has its own folder, its own content, its own branding and (when connected) its own Supabase project. Nothing here points at the SYLI database.
+This project is deliberately separate from the SYLI website. It has its own folder, its own content, its own branding and its own Supabase project. Nothing here points at the SYLI database.
 
 The content is centred on **Malawian students, their families and schools** — fees, books, uniforms, transport, distance, honest information and practical help. Younger-student photos are kept because that is where the journey begins; college and university remain one possible path, not the whole identity.
 
@@ -134,4 +134,4 @@ Public visitors only ever read rows where `published = true`. The `service_role`
 
 ## Hosting
 
-See **[HOSTING.md](HOSTING.md)**. Nothing has been deployed yet. The chosen home is a separate repository, `MW-NGO/shoam-website`, published at `https://mw-ngo.github.io/shoam-website/` with the admin page at `https://mw-ngo.github.io/shoam-website/admin.html`. This keeps the live SYLI site at `https://mw-ngo.github.io/` untouched.
+See **[HOSTING.md](HOSTING.md)**. The site is deployed from a separate repository, `MW-NGO/shoam-website`, at `https://mw-ngo.github.io/shoam-website/` with the admin page at `https://mw-ngo.github.io/shoam-website/admin.html`. This keeps the live SYLI site at `https://mw-ngo.github.io/` untouched.
