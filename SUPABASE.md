@@ -30,6 +30,7 @@ The browser key above is Supabase's current **publishable key**. It replaces the
 - [x] Public sign-up disabled; only manually created editor accounts can sign in
 - [x] Editor account created and auto-confirmed for `alumtech9@gmail.com`
 - [x] Local admin sign-in tested successfully with that account
+- [x] Hosted admin sign-in tested successfully at the published URL
 - [x] `js/config.js` wired to the SHOAM project
 
 Verified REST content:
@@ -58,7 +59,7 @@ The editor account has been created and auto-confirmed for **`alumtech9@gmail.co
 Sign in at:
 
 - Local preview: `http://127.0.0.1:8146/admin.html`
-- After deployment: `https://mw-ngo.github.io/shoam-website/admin.html`
+- Hosted site: `https://mw-ngo.github.io/shoam-website/admin.html`
 
 Public sign-up is off, so any additional editor must also be created manually in **Authentication → Users → Add user**.
 
