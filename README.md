@@ -12,10 +12,10 @@ The content is centred on **Malawian students, their families and schools** — 
 
 | What | Status |
 | --- | --- |
-| Public website | Built locally in this folder |
-| Live deployment | **Not deployed yet** |
-| Supabase backend | **Prepared but disconnected** — waiting for a SHOAM Supabase project |
-| Team content studio | Works in “local-only” mode; hosted login is prepared and starts once Supabase is connected |
+| Public website | Live at `https://mw-ngo.github.io/shoam-website/` |
+| Live deployment | GitHub Pages from `MW-NGO/shoam-website`, branch `main`, root folder |
+| Supabase backend | Connected to the SHOAM-only project with published-row reads |
+| Team content studio | Editor sign-in available at `https://mw-ngo.github.io/shoam-website/admin.html` |
 
 Preview locally with:
 
@@ -41,18 +41,18 @@ Then open <http://127.0.0.1:8146/>. Port `8146` is used so the SYLI preview on `
 | Get involved | `get-involved.html` | Volunteer, mentor, partner and support pathways |
 | Contact | `contact.html` | Message form, Messenger fallback, FAQ |
 | Not found | `404.html` | Friendly error page |
-| Content studio | `admin.html` | Hosted sign-in page for the team once Supabase is connected |
+| Content studio | `admin.html` | Hosted sign-in page for the team |
 
 ```
 shoam-student-helping-organization-of-malawi/
 ├─ index.html · about.html · projects.html · team.html
 ├─ articles.html · article.html · get-involved.html · contact.html · 404.html
-├─ admin.html                 ← team content studio (needs Supabase)
+├─ admin.html                 ← team content studio
 ├─ css/
 │  ├─ style.css
 │  └─ admin.css
 ├─ js/
-│  ├─ config.js               ← Supabase URL + anon key (currently empty)
+│  ├─ config.js               ← SHOAM Supabase URL + browser-safe publishable key
 │  ├─ backend.js              ← Supabase adapter, login, uploads, public reads
 │  ├─ data.js                 ← SHOAM content, fallback + seed
 │  ├─ local-content.js
@@ -108,19 +108,9 @@ Fill in any of the empty values in `js/data.js` and they appear automatically in
 
 ## Editing content
 
-### Without Supabase (current mode)
+### With Supabase (active)
 
-Because `js/config.js` is empty, the site runs from `js/data.js` plus the browser studios:
-
-- **Projects page:** “Add a project”
-- **Stories page:** “Write a story”
-- **Floating action buttons:** same studios, available anywhere on those pages
-
-Studio content is saved in the browser under `shoam.content.v1`. Use **Download all site content** in the studio, then paste the arrays into `js/local-content.js` to publish them for everyone.
-
-### With Supabase (connected)
-
-See **[SUPABASE.md](SUPABASE.md)**. The SHOAM-only project is created, seeded and wired into `js/config.js`:
+See **[SUPABASE.md](SUPABASE.md)**. The SHOAM-only project is created, seeded, connected and published:
 
 1. The schema and starter content have been applied.
 2. The site uses Supabase's browser-safe **publishable key** through the `supabaseAnonKey` config field.
@@ -129,6 +119,8 @@ See **[SUPABASE.md](SUPABASE.md)**. The SHOAM-only project is created, seeded an
 5. Open `https://mw-ngo.github.io/shoam-website/admin.html` (or `http://127.0.0.1:8146/admin.html` locally) and sign in.
 
 Public visitors only ever read rows where `published = true`. The `service_role` key must never be placed in the website.
+
+The page studios also work locally as an offline fallback, saving drafts in the browser under `shoam.content.v1`. Those local drafts are private to that browser; the hosted Supabase studio is the way to publish changes for everyone.
 
 ---
 
