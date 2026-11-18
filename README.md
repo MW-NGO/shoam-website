@@ -84,7 +84,7 @@ shoam-student-helping-organization-of-malawi/
 
 Every list is a normal JavaScript array. Copy an item, paste it at the top, give it a unique `slug`, and save. No build step.
 
-**Photos:** files live in `assets/photos/`. The site uses Unsplash photos of African students plus one real image from SHOAM's public Facebook post. No personal photos from Frank's profile were copied.
+**Photos:** files live in `assets/photos/`. The site uses the locally supplied student photos plus one real image from SHOAM's public Facebook post. Large source images are resized to about 1600 px wide for fast web delivery. No personal profile photos from Frank's account were copied.
 
 **Logo:** `assets/icons/emblem.svg` uses the heart from the downloaded `SHOAM.jpg` logo in place of a star, with the SHOAM wordmark inside it. The heart maps to the organisation's "education is for all" promise.
 
