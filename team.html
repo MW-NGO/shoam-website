@@ -1,0 +1,208 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Meet the team | Student Helping Organization of Malawi</title>
+  <meta name="description" content="Meet the founder, the student volunteers and the advisors behind SHOAM — and the roles that keep the work moving.">
+  <meta name="theme-color" content="#083B2E">
+  <meta property="og:title" content="Meet the team | Student Helping Organization of Malawi">
+  <meta property="og:description" content="The founder and student volunteers building SHOAM in the open.">
+  <meta property="og:image" content="assets/icons/og-image.jpg">
+  <link rel="icon" type="image/png" href="assets/icons/favicon.png">
+  <link rel="apple-touch-icon" href="assets/icons/apple-touch-icon.png">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@500;600;700;800&family=Inter:wght@400;500;600&family=Fraunces:opsz,wght@9..144,400;9..144,500;9..144,600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+<a class="skip" href="#main">Skip to content</a>
+
+<header class="site-header solid">
+  <div class="container nav-wrap">
+    <a class="brand" href="index.html" aria-label="Student Helping Organization of Malawi, home">
+      <img src="assets/icons/emblem.svg" alt="" width="44" height="50">
+      <span class="brand-text"><strong>Student Helping</strong><small>Organization of Malawi</small></span>
+    </a>
+    <button class="nav-toggle" aria-label="Open menu" aria-expanded="false" aria-controls="nav"><span></span><span></span><span></span></button>
+    <nav id="nav" class="nav" aria-label="Main">
+      <a href="index.html">Home</a>
+      <a href="about.html">About</a>
+      <a href="projects.html">Projects</a>
+      <a href="team.html">Team</a>
+      <a href="articles.html">Stories</a>
+      <a href="contact.html">Contact</a>
+      <a class="btn btn-gold btn-sm" href="get-involved.html">Get involved</a>
+    </nav>
+  </div>
+</header>
+
+<main id="main">
+
+  <section class="page-hero">
+    <div class="bg"><img src="assets/photos/students-desks.jpg" alt=""></div>
+    <div class="container">
+      <nav class="crumbs" aria-label="Breadcrumb"><a href="index.html">Home</a> / <span>Team</span></nav>
+      <p class="eyebrow">Meet the team</p>
+      <h1>The people behind SHOAM.</h1>
+      <p>A founder, a growing circle of student volunteers, and partners who show up. Everyone here is doing this alongside school, work and family.</p>
+    </div>
+  </section>
+
+  <!-- LEADERSHIP -->
+  <section class="section white" id="leadership-section">
+    <div class="container">
+      <div class="section-head-row">
+        <div class="section-head">
+          <p class="eyebrow dark">Leadership &amp; public faces</p>
+          <h2>Who you will meet first</h2>
+          <p class="sub">The members who speak for the organisation, hold its responsibilities and answer your messages.</p>
+        </div>
+        <span style="font-size:.85rem;color:var(--muted)"><strong id="team-count">0</strong> people in the directory</span>
+      </div>
+
+      <div class="team-grid leadership" id="team-leadership"></div>
+    </div>
+  </section>
+
+  <!-- THE REST -->
+  <section class="section sand">
+    <div class="container">
+      <div class="section-head-row">
+        <div class="section-head">
+          <p class="eyebrow sand">The wider circle</p>
+          <h2>Volunteers &amp; advisors</h2>
+          <p class="sub">Recognition matters. This is where the rest of the organisation gets its name in lights — including the roles that never make a poster.</p>
+        </div>
+      </div>
+
+      <div class="filters" id="team-filters"></div>
+
+      <div class="team-grid" id="team-grid" aria-live="polite"></div>
+
+      <div class="prompt-banner" style="margin-top:2rem">
+        <svg viewBox="0 0 24 24"><path d="M12 8v5M12 17v.5"/><circle cx="12" cy="12" r="9"/></svg>
+        <div><strong>Missing from this page?</strong>
+          If you are a member, volunteer or advisor and you are not listed, that is our mistake, not yours. <a href="contact.html?subject=Please%20add%20me%20to%20the%20team%20page">Send us your details</a> — name, role, a short bio and a clear photo — and we will add you.</div>
+      </div>
+    </div>
+  </section>
+
+  <!-- DIRECTORY -->
+  <section class="section tight white">
+    <div class="container">
+      <div class="section-head left" style="max-width:none">
+        <p class="eyebrow dark">Full directory</p>
+        <h2 style="font-size:1.7rem">Everyone, in one place</h2>
+      </div>
+      <div class="table-scroll">
+        <table class="directory">
+          <thead>
+            <tr><th>Name</th><th>Role</th><th>Group</th><th>Based in</th></tr>
+          </thead>
+          <tbody id="dir-body"></tbody>
+        </table>
+      </div>
+      <p style="font-size:.82rem;color:var(--muted);margin-top:.9rem">Updated as the team grows. Some roles are shared, and some people wear more than one hat — that is normal for a young organisation.</p>
+    </div>
+  </section>
+
+  <!-- WHAT MEMBERS COMMIT TO -->
+  <section class="section navy">
+    <div class="container">
+      <div class="section-head">
+        <p class="eyebrow">Being a member</p>
+        <h2>What we ask of each other</h2>
+        <p class="sub">Not a contract. A culture.</p>
+      </div>
+      <div class="steps">
+        <article class="step">
+          <h4>Show up</h4>
+          <p>If you say you will be there, be there. Reliability is the first leadership skill and the hardest to fake.</p>
+        </article>
+        <article class="step">
+          <h4>Protect people</h4>
+          <p>Safeguarding is everyone's job. We take concerns seriously, follow up, and never trade someone's safety for a good photo.</p>
+        </article>
+        <article class="step">
+          <h4>Keep records</h4>
+          <p>Minutes, budgets, attendance, consent. Written down so the work can be repeated and trusted.</p>
+        </article>
+        <article class="step">
+          <h4>Leave the door open</h4>
+          <p>Make it easier for the next person than it was for you. That is how a small team becomes a movement.</p>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <section class="involved">
+    <div class="container involved-grid">
+      <div>
+        <p class="eyebrow">Join us</p>
+        <h2>There is a place for you here.</h2>
+        <p>Volunteer, mentor, advise, or bring a skill we do not have yet. You do not need a title to be useful.</p>
+      </div>
+      <div class="involved-actions">
+        <a class="btn btn-gold" href="get-involved.html#volunteer">Volunteer with us</a>
+        <a class="btn btn-ghost" href="contact.html">Introduce yourself</a>
+      </div>
+    </div>
+  </section>
+
+</main>
+
+<footer class="site-footer">
+  <div class="container">
+    <div class="footer-main">
+      <div class="foot-brand">
+        <img src="assets/icons/emblem.svg" alt="" width="54" height="62">
+        <div><strong>Student Helping Organization of Malawi</strong><p>Education is for all.</p></div>
+      </div>
+      <div class="foot-col">
+        <h4>Explore</h4>
+        <a href="about.html">About us</a>
+        <a href="about.html#challenges">The challenge</a>
+        <a href="projects.html">Projects</a>
+        <a href="team.html">Meet the team</a>
+        <a href="articles.html">Stories</a>
+      </div>
+      <div class="foot-col">
+        <h4>Get involved</h4>
+        <a href="get-involved.html#volunteer">Volunteer</a>
+        <a href="get-involved.html#mentor">Become a mentor</a>
+        <a href="get-involved.html#partner">Partner with us</a>
+        <a href="get-involved.html#support">Support a project</a>
+        <a href="contact.html">Contact</a>
+      </div>
+      <div class="foot-col">
+        <h4>Find us</h4>
+        <p>Malawi</p>
+        <a data-org-email href="mailto:">Email</a>
+        <a data-org-phone href="tel:">Phone</a>
+        <a data-contact="facebook" href="https://web.facebook.com/profile.php?id=61554677085022" target="_blank" rel="noopener">Facebook</a>
+        <a data-contact="messenger" href="https://m.me/61554677085022" target="_blank" rel="noopener">Messenger</a>
+      </div>
+    </div>
+    <div class="copy">
+      <p>&copy; <span id="year">2026</span> Student Helping Organization of Malawi. All rights reserved.</p>
+      <p>Built with care for Malawi.</p>
+    </div>
+  </div>
+</footer>
+
+<div class="modal" id="member-modal" role="dialog" aria-modal="true" aria-label="Team member">
+  <div class="modal-backdrop"></div>
+  <div class="modal-panel"></div>
+</div>
+
+<script src="js/config.js"></script>
+<script src="js/backend.js"></script>
+<script src="js/data.js"></script>
+<script src="js/local-content.js"></script>
+<script src="js/site.js"></script>
+<script src="js/team.js"></script>
+</body>
+</html>

@@ -1,0 +1,18 @@
+# Operating system noise
+.DS_Store
+Thumbs.db
+Desktop.ini
+
+# Editors
+.vscode/
+.idea/
+*.swp
+
+# Local tooling
+node_modules/
+npm-debug.log*
+*.local
+
+# Exported studio content can contain unpublished drafts.
+# Move anything you want to publish into js/local-content.js.
+shoam-content*.json
