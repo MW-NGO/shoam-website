@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Content studio | Student Helping Organization of Malawi</title>
+  <meta name="robots" content="noindex, nofollow">
+  <meta name="theme-color" content="#083B2E">
+  <link rel="icon" type="image/png" href="assets/icons/favicon.png">
+  <link rel="apple-touch-icon" href="assets/icons/apple-touch-icon.png">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@500;600;700;800&family=Inter:wght@400;500;600&family=Fraunces:opsz,wght@9..144,400;9..144,500;9..144,600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/admin.css">
+</head>
+<body class="admin">
+
+<a class="skip" href="#main">Skip to content</a>
+
+<header class="site-header solid">
+  <div class="container nav-wrap">
+    <a class="brand" href="index.html" aria-label="Student Helping Organization of Malawi, home">
+      <img src="assets/icons/emblem.svg" alt="" width="44" height="50">
+      <span class="brand-text"><strong>Student Helping</strong><small>Organization of Malawi</small></span>
+    </a>
+    <nav id="nav" class="nav" aria-label="Main">
+      <a href="index.html">View site</a>
+      <a href="projects.html">Projects</a>
+      <a href="articles.html">Stories</a>
+    </nav>
+  </div>
+</header>
+
+<main id="main">
+  <div class="container admin-wrap">
+
+    <!-- ============ NOT CONFIGURED ============ -->
+    <div class="admin-card wide" id="setup" hidden>
+      <p class="eyebrow dark">One-time setup</p>
+      <h2>Connect the content database</h2>
+      <p>The SHOAM-only Supabase project is already connected. If this message appears, <code>js/config.js</code> is missing the SHOAM project URL or browser-safe publishable key.</p>
+      <ol>
+        <li>Open <code>js/config.js</code> and restore the SHOAM URL and publishable key listed in <a href="SUPABASE.md">SUPABASE.md</a>.</li>
+        <li>Confirm <code>supabase/schema.sql</code> and <code>supabase/seed.sql</code> have been run in the SHOAM project.</li>
+        <li>Confirm the auth URLs from <a href="SUPABASE.md">SUPABASE.md</a> are saved in Supabase Authentication.</li>
+        <li>Create each editor in <strong>Authentication &rarr; Users &rarr; Add user</strong>. Keep public sign-up off.</li>
+      </ol>
+      <p class="admin-note"><strong>SHOAM addresses:</strong> public site <code>https://mw-ngo.github.io/shoam-website/</code> · admin <code>https://mw-ngo.github.io/shoam-website/admin.html</code>. Local preview admin: <code>http://127.0.0.1:8146/admin.html</code>.</p>
+      <p class="admin-note">Full instructions: <a href="SUPABASE.md">SUPABASE.md</a>. Never put the <code>service_role</code> key in the website.</p>
+    </div>
+
+    <!-- ============ SIGN IN ============ -->
+    <div class="admin-card" id="login" hidden>
+      <p class="eyebrow dark">Team only</p>
+      <h2>Sign in to edit</h2>
+      <p>Use the email and password set for you in Supabase. There is no public sign-up.</p>
+      <form id="login-form" novalidate>
+        <div class="field">
+          <label for="login-email">Email</label>
+          <input id="login-email" name="email" type="email" autocomplete="username" placeholder="you@example.com">
+        </div>
+        <div class="field">
+          <label for="login-password">Password</label>
+          <input id="login-password" name="password" type="password" autocomplete="current-password" placeholder="Your password">
+        </div>
+        <button class="btn btn-blue" type="submit" id="login-submit">Sign in</button>
+        <p class="admin-note" id="login-note" role="status" aria-live="polite"></p>
+      </form>
+    </div>
+
+    <!-- ============ APP ============ -->
+    <div id="app" hidden>
+      <div class="admin-head">
+        <div>
+          <p class="eyebrow dark">Content studio</p>
+          <h1>Manage the site</h1>
+          <p class="sub">Everything you save here appears on the public site for everyone, on every device. No exporting, no redeploying.</p>
+        </div>
+        <div class="admin-user">
+          <span id="admin-email"></span>
+          <button class="btn btn-outline btn-sm" type="button" id="sign-out">Sign out</button>
+        </div>
+      </div>
+
+      <nav class="admin-tabs" aria-label="Content type">
+        <button type="button" data-tab="projects" class="active" aria-pressed="true">Projects</button>
+        <button type="button" data-tab="members" aria-pressed="false">Team</button>
+        <button type="button" data-tab="articles" aria-pressed="false">Stories</button>
+      </nav>
+
+      <section data-panel="projects">
+        <div class="admin-bar">
+          <h2>Projects <span class="count" id="count-projects"></span></h2>
+          <button class="btn btn-blue btn-sm" type="button" data-new="projects">New project</button>
+        </div>
+        <div class="admin-list" id="list-projects"></div>
+      </section>
+
+      <section data-panel="members" hidden>
+        <div class="admin-bar">
+          <h2>Team <span class="count" id="count-members"></span></h2>
+          <button class="btn btn-blue btn-sm" type="button" data-new="members">New member</button>
+        </div>
+        <div class="admin-list" id="list-members"></div>
+      </section>
+
+      <section data-panel="articles" hidden>
+        <div class="admin-bar">
+          <h2>Stories <span class="count" id="count-articles"></span></h2>
+          <button class="btn btn-blue btn-sm" type="button" data-new="articles">New story</button>
+        </div>
+        <div class="admin-list" id="list-articles"></div>
+      </section>
+    </div>
+
+  </div>
+</main>
+
+<div id="editor-root"></div>
+
+<script src="js/config.js"></script>
+<script src="js/backend.js"></script>
+<script src="js/admin.js"></script>
+</body>
+</html>

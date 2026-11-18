@@ -1,0 +1,211 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Stories from Malawi | Student Helping Organization of Malawi</title>
+  <meta name="description" content="Field notes, essays, interviews and student voices from Malawi. Read the work in their own words — and write a story.">
+  <meta name="theme-color" content="#083B2E">
+  <meta property="og:title" content="Stories from Malawi">
+  <meta property="og:description" content="Field notes, essays and people doing the work — in their own words.">
+  <meta property="og:image" content="assets/icons/og-image.jpg">
+  <link rel="icon" type="image/png" href="assets/icons/favicon.png">
+  <link rel="apple-touch-icon" href="assets/icons/apple-touch-icon.png">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@500;600;700;800&family=Inter:wght@400;500;600&family=Fraunces:opsz,wght@9..144,400;9..144,500;9..144,600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+<a class="skip" href="#main">Skip to content</a>
+
+<header class="site-header solid">
+  <div class="container nav-wrap">
+    <a class="brand" href="index.html" aria-label="Student Helping Organization of Malawi, home">
+      <img src="assets/icons/emblem.svg" alt="" width="44" height="50">
+      <span class="brand-text"><strong>Student Helping</strong><small>Organization of Malawi</small></span>
+    </a>
+    <button class="nav-toggle" aria-label="Open menu" aria-expanded="false" aria-controls="nav"><span></span><span></span><span></span></button>
+    <nav id="nav" class="nav" aria-label="Main">
+      <a href="index.html">Home</a>
+      <a href="about.html">About</a>
+      <a href="projects.html">Projects</a>
+      <a href="team.html">Team</a>
+      <a href="articles.html">Stories</a>
+      <a href="contact.html">Contact</a>
+      <a class="btn btn-gold btn-sm" href="get-involved.html">Get involved</a>
+    </nav>
+  </div>
+</header>
+
+<main id="main">
+
+  <section class="page-hero">
+    <div class="bg"><img src="assets/photos/students-hero.jpg" alt=""></div>
+    <div class="container">
+      <nav class="crumbs" aria-label="Breadcrumb"><a href="index.html">Home</a> / <span>Stories</span></nav>
+      <p class="eyebrow">Stories</p>
+      <h1>Malawi, in our own words.</h1>
+      <p>Not press releases. Field notes from schools and communities, arguments, interviews and the small moments that explain why this work matters.</p>
+    </div>
+  </section>
+
+  <section class="section white">
+    <div class="container">
+
+      <div class="section-head-row">
+        <div class="section-head">
+          <p class="eyebrow dark">The latest</p>
+          <h2>Read something real</h2>
+          <p class="sub">Written by students and volunteers, for anyone who wants to understand this work a little better.</p>
+        </div>
+        <div style="display:flex;gap:.6rem;flex-wrap:wrap">
+          <button class="btn btn-blue" type="button" id="open-story-studio">Write a story</button>
+          <a class="btn btn-outline" href="https://web.facebook.com/profile.php?id=61554677085022" target="_blank" rel="noopener">Facebook updates</a>
+        </div>
+      </div>
+
+      <div id="featured-article"></div>
+
+      <div class="filters" id="article-filters"></div>
+
+      <div class="article-grid" id="article-list" aria-live="polite"></div>
+
+    </div>
+  </section>
+
+  <!-- WHY STORIES -->
+  <section class="section navy">
+    <div class="container split">
+      <div class="split-copy">
+        <p class="eyebrow">Why we write</p>
+        <h2>If we don't tell our story, someone else will.</h2>
+        <p>Development language turns people into beneficiaries. We would rather be students, teachers, neighbours and friends — with names, opinions and a sense of humour.</p>
+        <p>So we write it down. The exam that nearly did not happen. The meeting that changed our mind. The volunteer who noticed a student had stopped coming. Stories are evidence, too.</p>
+        <a class="btn btn-gold" href="contact.html?subject=Story%20idea">Pitch a story</a>
+      </div>
+      <div class="split-media">
+        <img src="assets/photos/shoam-post.jpg" alt="A SHOAM update shared by the founder" loading="lazy">
+        <div class="float-card"><strong>Have a story?</strong><span>Members and friends of SHOAM can pitch any time.</span></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- WRITING STUDIO -->
+  <section class="section tight sand">
+    <div class="container">
+      <div class="section-head">
+        <p class="eyebrow sand">For members</p>
+        <h2>You write it. The design follows.</h2>
+        <p class="sub">The story studio asks for a headline, a standfirst and the story — then gives you four real layouts to choose from, with a live preview.</p>
+      </div>
+      <div class="cards four">
+        <article class="card">
+          <div class="icon blue"><svg viewBox="0 0 24 24"><path d="M4 6h16M4 12h12M4 18h8"/></svg></div>
+          <h3>Feature</h3>
+          <p>A clean editorial read with a drop cap. Best for essays and reflections.</p>
+        </article>
+        <article class="card">
+          <div class="icon lake"><svg viewBox="0 0 24 24"><path d="M4 5h16v10a4 4 0 0 1-4 4H8a4 4 0 0 1-4-4z"/><path d="M8 21h8"/></svg></div>
+          <h3>Interview</h3>
+          <p>Question-and-answer styling for conversations with members and partners.</p>
+        </article>
+        <article class="card">
+          <div class="icon gold"><svg viewBox="0 0 24 24"><path d="M3 8h3l2-3h8l2 3h3v12H3z"/><circle cx="12" cy="13" r="3.5"/></svg></div>
+          <h3>Photo essay</h3>
+          <p>Let the pictures lead. Large images, short captions, room to breathe.</p>
+        </article>
+        <article class="card">
+          <div class="icon green"><svg viewBox="0 0 24 24"><path d="M5 3h11l3 3v15H5z"/><path d="M8 8h8M8 12h8M8 16h5"/></svg></div>
+          <h3>Field note</h3>
+          <p>Warm paper, notebook feel. Perfect for a day in the field.</p>
+        </article>
+      </div>
+      <div style="text-align:center;margin-top:2rem">
+        <button class="btn btn-blue" type="button" id="open-story-studio-2">Open the story studio</button>
+      </div>
+      <p style="text-align:center;font-size:.82rem;color:var(--muted);margin-top:1rem;max-width:62ch;margin-inline:auto">
+        Stories are saved in this browser first. Download the backup to make one permanent for everyone, or send it to the person who looks after the website.
+      </p>
+    </div>
+  </section>
+
+  <section class="involved">
+    <div class="container involved-grid">
+      <div>
+        <p class="eyebrow">Join in</p>
+        <h2>Every story starts with someone showing up.</h2>
+        <p>Volunteer, mentor or partner with a project — and you will have a story worth telling too.</p>
+      </div>
+      <div class="involved-actions">
+        <a class="btn btn-gold" href="get-involved.html">Get involved</a>
+        <a class="btn btn-ghost" href="contact.html">Say hello</a>
+      </div>
+    </div>
+  </section>
+
+</main>
+
+<footer class="site-footer">
+  <div class="container">
+    <div class="footer-main">
+      <div class="foot-brand">
+        <img src="assets/icons/emblem.svg" alt="" width="54" height="62">
+        <div><strong>Student Helping Organization of Malawi</strong><p>Education is for all.</p></div>
+      </div>
+      <div class="foot-col">
+        <h4>Explore</h4>
+        <a href="about.html">About us</a>
+        <a href="about.html#challenges">The challenge</a>
+        <a href="projects.html">Projects</a>
+        <a href="team.html">Meet the team</a>
+        <a href="articles.html">Stories</a>
+      </div>
+      <div class="foot-col">
+        <h4>Get involved</h4>
+        <a href="get-involved.html#volunteer">Volunteer</a>
+        <a href="get-involved.html#mentor">Become a mentor</a>
+        <a href="get-involved.html#partner">Partner with us</a>
+        <a href="get-involved.html#support">Support a project</a>
+        <a href="contact.html">Contact</a>
+      </div>
+      <div class="foot-col">
+        <h4>Find us</h4>
+        <p>Malawi</p>
+        <a data-org-email href="mailto:">Email</a>
+        <a data-org-phone href="tel:">Phone</a>
+        <a data-contact="facebook" href="https://web.facebook.com/profile.php?id=61554677085022" target="_blank" rel="noopener">Facebook</a>
+        <a data-contact="messenger" href="https://m.me/61554677085022" target="_blank" rel="noopener">Messenger</a>
+      </div>
+    </div>
+    <div class="copy">
+      <p>&copy; <span id="year">2026</span> Student Helping Organization of Malawi. All rights reserved.</p>
+      <p>Built with care for Malawi.</p>
+    </div>
+  </div>
+</footer>
+
+<div id="studio-root"></div>
+
+<button class="fab" type="button" id="fab-story" aria-label="Write a story">
+  <svg viewBox="0 0 24 24"><path d="M12 5v14M5 12h14"/></svg>
+  Write a story
+</button>
+
+<script src="js/config.js"></script>
+<script src="js/backend.js"></script>
+<script src="js/data.js"></script>
+<script src="js/local-content.js"></script>
+<script src="js/site.js"></script>
+<script src="js/articles.js"></script>
+<script>
+  document.addEventListener("DOMContentLoaded", function () {
+    function openStudio() { window.SHOAMStories?.open(); }
+    document.getElementById("open-story-studio")?.addEventListener("click", openStudio);
+    document.getElementById("open-story-studio-2")?.addEventListener("click", openStudio);
+    document.getElementById("fab-story")?.addEventListener("click", openStudio);
+  });
+</script>
+</body>
+</html>
