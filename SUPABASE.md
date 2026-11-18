@@ -72,10 +72,10 @@ Editors can manage projects, team members, stories and photos in the `media` Sto
 
 Both files are safe to run more than once; the seed does not duplicate existing slugs or names.
 
-## Final checks after the editor exists
+## Final checks
 
-- Public pages show the seeded SHOAM content.
-- Public “Add a project” / “Write a story” buttons stay hidden.
-- Admin sign-in works at the local preview URL and, after deployment, at the hosted URL.
-- An uploaded test photo appears in Storage → `media`.
-- The SYLI preview and live site remain untouched.
+- [x] Public pages show the seeded SHOAM content locally and at the hosted URL.
+- [x] Public “Add a project” / “Write a story” buttons stay hidden.
+- [x] Admin sign-in works at both the local preview URL and the hosted URL.
+- [x] The SYLI preview and live site remain untouched.
+- [ ] Upload a test photo and confirm it appears in Storage → `media`.
