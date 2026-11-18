@@ -1,0 +1,54 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 460" width="400" height="460" role="img" aria-labelledby="title desc">
+  <title id="title">SHOAM emblem</title>
+  <desc id="desc">An open book with a gold heart, the word SHOAM, and an upward teal path, representing care and education for all students in Malawi.</desc>
+  <defs>
+    <radialGradient id="bg" cx="35%" cy="28%" r="85%">
+      <stop offset="0" stop-color="#0A513E"/>
+      <stop offset="0.55" stop-color="#083B2E"/>
+      <stop offset="1" stop-color="#062A20"/>
+    </radialGradient>
+    <linearGradient id="gold" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#FFE9A0"/>
+      <stop offset="0.5" stop-color="#F2B73B"/>
+      <stop offset="1" stop-color="#B97A12"/>
+    </linearGradient>
+    <linearGradient id="teal" x1="0" y1="1" x2="1" y2="0">
+      <stop offset="0" stop-color="#2FA88A"/>
+      <stop offset="1" stop-color="#7ED9BE"/>
+    </linearGradient>
+    <linearGradient id="page" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#FFFFFF"/>
+      <stop offset="1" stop-color="#DFF7EE"/>
+    </linearGradient>
+    <filter id="soft" x="-30%" y="-30%" width="160%" height="160%">
+      <feGaussianBlur stdDeviation="7"/>
+    </filter>
+  </defs>
+
+  <!-- outer badge -->
+  <circle cx="200" cy="206" r="176" fill="#062A20" opacity="0.35" filter="url(#soft)"/>
+  <circle cx="200" cy="198" r="172" fill="url(#bg)" stroke="url(#gold)" stroke-width="10"/>
+  <circle cx="200" cy="198" r="151" fill="none" stroke="#7ED9BE" stroke-opacity="0.35" stroke-width="2"/>
+
+  <!-- the heart from the SHOAM logo -->
+  <path d="M200 158c-10-9-66-41-66-79 0-22 16-39 37-39 14 0 25 7 29 18 4-11 15-18 29-18 21 0 37 17 37 39 0 38-56 70-66 79z"
+        fill="url(#gold)" stroke="#FFF4D2" stroke-width="3" stroke-linejoin="round"/>
+  <path d="M200 140c-8-7-48-33-48-60 0-15 11-26 25-26 10 0 18 5 23 14 5-9 13-14 23-14 14 0 25 11 25 26 0 27-40 53-48 60z"
+        fill="none" stroke="#083B2E" stroke-opacity="0.25" stroke-width="4"/>
+  <text x="200" y="100" text-anchor="middle" font-family="Poppins, Segoe UI, sans-serif" font-size="24" font-weight="800" letter-spacing="3" fill="#083B2E">SHOAM</text>
+
+  <!-- upward path of progress -->
+  <path d="M96 276c34-10 54-38 74-61 22-25 44-40 72-44" fill="none" stroke="url(#teal)" stroke-width="14" stroke-linecap="round" opacity="0.9"/>
+  <path d="M226 161l26 4-17 20" fill="none" stroke="url(#teal)" stroke-width="12" stroke-linecap="round" stroke-linejoin="round"/>
+
+  <!-- open book -->
+  <path d="M200 258c-28-24-62-31-101-24v92c39-7 73 0 101 24 28-24 62-31 101-24v-92c-39-7-73 0-101 24z"
+        fill="url(#page)" stroke="#F2B73B" stroke-width="6" stroke-linejoin="round"/>
+  <path d="M200 258v92" stroke="#0E6649" stroke-width="7" stroke-linecap="round"/>
+  <path d="M117 263c24-3 45 2 63 14M117 290c24-3 45 2 63 14M220 277c18-12 39-17 63-14M220 304c18-12 39-17 63-14"
+        fill="none" stroke="#2FA88A" stroke-width="4" stroke-linecap="round" opacity="0.8"/>
+
+  <!-- banner -->
+  <path d="M70 350h260l-14 50H84z" fill="#062A20" stroke="url(#gold)" stroke-width="5" stroke-linejoin="round"/>
+  <text x="200" y="385" text-anchor="middle" font-family="Poppins, Segoe UI, sans-serif" font-size="34" font-weight="800" letter-spacing="6" fill="#FFE9A0">SHOAM</text>
+</svg>
