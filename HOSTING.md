@@ -1,10 +1,10 @@
 # Hosting the SHOAM website
 
-**Nothing has been deployed yet.** This site is still a local project in its own folder. The live SYLI site at `https://mw-ngo.github.io/` must stay untouched.
+The SHOAM site is deployed with GitHub Pages from its own repository. The live SYLI site at `https://mw-ngo.github.io/` remains untouched.
 
-## Chosen address
+## Live address
 
-SHOAM will use its **own repository** under the MW-NGO account so the two websites cannot clash:
+SHOAM uses its **own repository** under the MW-NGO account so the two websites cannot clash:
 
 | Item | Value |
 | --- | --- |
@@ -26,20 +26,20 @@ python -m http.server 8146
 
 Open <http://127.0.0.1:8146/>. The local admin page is <http://127.0.0.1:8146/admin.html>.
 
-## Deploying later (not done yet)
+## Deployment settings used
 
-1. Create a new public repository named `shoam-website` under the `MW-NGO` account.
-2. Upload the **contents of this folder** to the repository root — not a nested `shoam-student-helping-organization-of-malawi/` folder.
+1. A public repository named `shoam-website` was created under the `MW-NGO` account.
+2. The **contents of this folder** were uploaded to the repository root — not a nested `shoam-student-helping-organization-of-malawi/` folder.
 3. In **Settings → Pages**:
    - Source: **Deploy from a branch**
    - Branch: `main`
    - Folder: `/ (root)`
-4. Wait for GitHub Pages to build, then check `https://mw-ngo.github.io/shoam-website/`.
-5. Do **not** add a `CNAME` file. Do **not** change the `MW-NGO.github.io` repository used by SYLI.
+4. GitHub Pages built successfully; the live homepage and admin page were checked.
+5. No `CNAME` file was added. The `MW-NGO.github.io` repository used by SYLI was not changed.
 
 ## Supabase redirect URLs
 
-When the SHOAM Supabase project exists, set these in **Authentication → URL Configuration** so login and recovery links land on the right site:
+These are saved in **Authentication → URL Configuration** so login and recovery links land on the right site:
 
 ```text
 Site URL:
@@ -53,7 +53,7 @@ http://127.0.0.1:8146/admin.html
 
 Password sign-in does not itself redirect, but these values keep email confirmation and password recovery on the SHOAM admin page. See **SUPABASE.md** for the full setup.
 
-## Before going live
+## Launch checklist
 
 - [x] Confirm `https://mw-ngo.github.io/shoam-website/` is the agreed address.
 - [ ] Fill in any real SHOAM email/phone/WhatsApp details in `js/data.js`.
