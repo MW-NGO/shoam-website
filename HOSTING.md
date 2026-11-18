@@ -55,15 +55,15 @@ Password sign-in does not itself redirect, but these values keep email confirmat
 
 ## Before going live
 
-- [ ] Confirm `https://mw-ngo.github.io/shoam-website/` is the agreed address.
+- [x] Confirm `https://mw-ngo.github.io/shoam-website/` is the agreed address.
 - [ ] Fill in any real SHOAM email/phone/WhatsApp details in `js/data.js`.
 - [x] Create the SHOAM Supabase project and run `supabase/schema.sql` + `supabase/seed.sql`.
 - [x] Paste only the SHOAM URL and browser-safe publishable key into `js/config.js`.
 - [x] Add the SHOAM auth URLs above in Supabase.
 - [x] Create at least one editor account using the real editor email.
-- [ ] Test `https://mw-ngo.github.io/shoam-website/admin.html`.
-- [ ] Check all photos load and the mobile menu works.
-- [ ] Confirm `https://mw-ngo.github.io/` still serves SYLI, unchanged.
+- [x] Test `https://mw-ngo.github.io/shoam-website/admin.html`.
+- [x] Check all photos load and the mobile menu works.
+- [x] Confirm `https://mw-ngo.github.io/` still serves SYLI, unchanged.
 
 ## Notes
 
